@@ -1,0 +1,27 @@
+package Insurance;
+
+import org.testng.annotations.Test;
+
+public class DogInsuranceTest {
+
+	@Test
+	public void MobileLoginForD()
+	{
+		System.out.println("Dog Insurance Mobile Login");
+	}
+	@Test
+	public void MobileLogOutForD()
+	{
+		System.out.println("Dog Insurance Mobile Logout");
+	}
+	@Test
+	public void WebLoginForD()
+	{
+		System.out.println("Dog Insurance Web Login");
+	}
+	@Test
+	public void WebLogOutForD()
+	{
+		System.out.println("Dog Insurance Web Logout");
+	}
+}

@@ -1,0 +1,22 @@
+package Insurance;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+
+public class JavaScriptExecutorInSele {
+	@Test
+	public void DragAndDropInSele() throws InterruptedException
+	{
+	 //Alert
+	WebDriver driver = new ChromeDriver();
+	driver.get("https://login.yahoo.com");
+	driver.manage().window().maximize();
+	//driver.findElement(By.id("persistent")).click();
+	JavascriptExecutor Js =(JavascriptExecutor)driver;
+	Js.executeScript("alert('hello this is an alert')");
+	}
+}

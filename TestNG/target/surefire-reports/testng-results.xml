@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SMOKE" duration-ms="59" started-at="2022-12-01T09:10:27 IST" finished-at="2022-12-01T09:10:27 IST">
+    <groups>
+      <group name="SMK">
+        <method signature="DogInsuranceTest.WebLoginForD()[pri:2, instance:Insurance.DogInsuranceTest@33c7e1bb]" name="WebLoginForD" class="Insurance.DogInsuranceTest"/>
+        <method signature="DogInsuranceTest.MobileLoginForD()[pri:5, instance:Insurance.DogInsuranceTest@33c7e1bb]" name="MobileLoginForD" class="Insurance.DogInsuranceTest"/>
+      </group> <!-- SMK -->
+    </groups>
+    <test name="Test" duration-ms="59" started-at="2022-12-01T09:10:27 IST" finished-at="2022-12-01T09:10:27 IST">
+      <class name="Insurance.DogInsuranceTest">
+        <test-method status="PASS" signature="WebLoginForD()[pri:2, instance:Insurance.DogInsuranceTest@33c7e1bb]" name="WebLoginForD" duration-ms="8" started-at="2022-12-01T09:10:27 IST" finished-at="2022-12-01T09:10:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginForD -->
+        <test-method status="PASS" signature="MobileLoginForD()[pri:5, instance:Insurance.DogInsuranceTest@33c7e1bb]" name="MobileLoginForD" duration-ms="1" started-at="2022-12-01T09:10:27 IST" finished-at="2022-12-01T09:10:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginForD -->
+      </class> <!-- Insurance.DogInsuranceTest -->
+    </test> <!-- Test -->
+  </suite> <!-- SMOKE -->
+</testng-results>

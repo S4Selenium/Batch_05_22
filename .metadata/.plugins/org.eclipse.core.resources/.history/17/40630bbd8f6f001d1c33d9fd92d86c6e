@@ -1,0 +1,18 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class RobotClassInSelenium {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+			//WebDriverManager
+			WebDriver driver =WebDriverManager.chromedriver().create();
+			driver.get("https://testfile.org/all-pdf-sample-test-file-download-direct/");
+			driver.manage().window().maximize();
+			Thread.sleep(5000);
+			
+	}
+}

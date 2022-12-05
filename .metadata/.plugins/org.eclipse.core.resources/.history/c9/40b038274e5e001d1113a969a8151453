@@ -1,0 +1,26 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class SeleniumFirstPgm {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*
+		 * System.setProperty("webdriver.chrome.driver",
+		 * "D:\\skillup\\chromedriver.exe"); //Why they are keeping webdriver as an
+		 * interface WebDriver driver = new ChromeDriver();
+		 * driver.get("https://www.saucedemo.com/");
+		 */
+		//WebDriverManager
+		WebDriver driver =WebDriverManager.chromedriver().create();
+		//driver.get("https://www.saucedemo.com/");
+		//diff b/w driver.get and driver.navigate.to
+		driver.navigate().to("https://www.saucedemo.com/");
+		
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package Insurance;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class JavaScriptExecutorInSele {
+	public void DragAndDropInSele() throws InterruptedException
+	{
+	 //Alert
+	WebDriver driver = new ChromeDriver();
+	driver.get("https://login.yahoo.com");
+	driver.manage().window().maximize();
+	}
+}
