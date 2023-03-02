@@ -3,4 +3,32 @@
   <groupId>Selenium</groupId>
   <artifactId>PageObjectModel</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+<build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M7</version>
+          <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>Smoke.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+<dependencies>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.6.0</version>
+</dependency>
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.5</version>
+</dependency>
+</dependencies>
 </project>
