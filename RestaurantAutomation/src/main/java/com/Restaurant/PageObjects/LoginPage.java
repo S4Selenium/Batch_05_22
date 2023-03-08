@@ -1,10 +1,13 @@
 package com.Restaurant.PageObjects;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.Restaurant.BaseClass.BaseClass;
+import com.Restaurant.Utilities.ExcelRead;
 
 public class LoginPage extends BaseClass{
 //PageObjectModelWithPageObjectFactory
@@ -48,10 +51,13 @@ public class LoginPage extends BaseClass{
 		return action.isDisplayed(getDriver(), Logo);
 	}
 	
-	public void LoginFnt()
+	public void LoginFnt() throws Exception
+	
 	{
-		action.type(Username,prop.getProperty("Username"));
-		action.type(Password,prop.getProperty("Password"));
+		ExcelRead data = new ExcelRead();
+		ArrayList exceldata = data.getData("Login");
+		action.type(Username,(String) exceldata.get(0));
+		action.type(Password,(String) exceldata.get(1));
 		action.click1(LoginButton,"Clicking On Login Button");
 	}
 

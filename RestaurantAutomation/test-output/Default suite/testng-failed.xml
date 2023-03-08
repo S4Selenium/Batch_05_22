@@ -6,8 +6,9 @@
       <class name="com.Restaurant.Testcases.VerifyvaliduserLoginTest">
         <methods>
           <include name="loadConfig"/>
-          <include name="launchApp"/>
+          <include name="Close"/>
           <include name="VerifyUserLogin"/>
+          <include name="firstcall"/>
           <include name="Closing"/>
         </methods>
       </class> <!-- com.Restaurant.Testcases.VerifyvaliduserLoginTest -->

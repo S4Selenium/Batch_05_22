@@ -1,8 +1,11 @@
 package com.Restaurant.Utilities;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -13,6 +16,7 @@ public class ExcelRead {
 	public ArrayList<String> getData(String Testcase) throws Exception {
 		ArrayList<String> a = new ArrayList<String>();
 		// TODO Auto-generated method stub
+		// Path of excel sheet
 		FileInputStream fil = new FileInputStream("D:\\New folder\\DataDriven.xlsx");
 		XSSFWorkbook wb = new XSSFWorkbook(fil);
 		int sheets = 0;
@@ -54,22 +58,29 @@ public class ExcelRead {
 						while (cell.hasNext())
 						// type = string
 						{
-							a.add(cell.next().getStringCellValue());
+							Cell c = cell.next();
+							if (c.getCellType() == CellType.STRING) {
+								a.add(c.getStringCellValue());
+							} else {
+								a.add(NumberToTextConverter.toText(c.getNumericCellValue()));
+								// a.add(c.getNumericCellValue());
+							}
 
 						}
 
-						// case 2 numeric
-
-						a.add(NumberToTextConverter.toText(cell.next().getNumericCellValue()));
-
 					}
+
+					// case 2 numeric
+
+					// a.add(NumberToTextConverter.toText(cell.next().getNumericCellValue()));
 
 				}
 			}
 
 		}
 		return a;
-
 	}
+
+	
 
 }

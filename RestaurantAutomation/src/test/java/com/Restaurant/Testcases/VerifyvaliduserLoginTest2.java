@@ -10,7 +10,7 @@ import com.Restaurant.Utilities.Log;
 public class VerifyvaliduserLoginTest2 extends BaseClass {
 
 	@Test
-	public void VerifyUserLogin()
+	public void VerifyUserLogin() throws Exception
 	{
 		Log.startTestCase("VerifyUserLogin");
 		Assert.assertTrue(Lp.IsLogoPresent(),"LoginPage Is not Loaded");
