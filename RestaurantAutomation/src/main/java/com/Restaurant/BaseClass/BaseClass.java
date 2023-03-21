@@ -35,9 +35,14 @@ public class BaseClass {
 		 public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<RemoteWebDriver>(); 
 		 
 		@BeforeSuite
-		public void loadConfig() {
-			  DOMConfigurator.configure("log4j.xml");
+		public void fntloadconfig()
+		{
+			 DOMConfigurator.configure("log4j.xml");
 			 ExtentReport.setExtent();
+		}
+		
+		@BeforeTest
+		public void loadConfig() {
 			try {
 				 prop = new Properties();
 				FileInputStream ip = new FileInputStream(
@@ -87,6 +92,7 @@ public class BaseClass {
 		   {
 			   getDriver().close();
 		   }
+		   
 		@AfterSuite
 		public void Closing()
 		{		  

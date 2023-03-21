@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="fluent"/>
+		<item key="selection" value="screenShot"/>
 		<list key="findhistory">
+			<item value="screenshot"/>
+			<item value="15"/>
+			<item value="14"/>
 			<item value="fluent"/>
 			<item value="package com.Restaurant.PageObjects;"/>
 		</list>

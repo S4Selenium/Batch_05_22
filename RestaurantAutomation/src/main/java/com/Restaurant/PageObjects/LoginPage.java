@@ -59,6 +59,8 @@ public class LoginPage extends BaseClass{
 		action.type(Username,(String) exceldata.get(0));
 		action.type(Password,(String) exceldata.get(1));
 		action.click1(LoginButton,"Clicking On Login Button");
+
+
 	}
 
 }
