@@ -2,35 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-08T07:51:46 EET" name="Suite" finished-at="2023-03-08T07:51:52 EET" duration-ms="5416">
+  <suite started-at="2023-03-21T23:07:52 EET" name="Suite" finished-at="2023-03-21T23:07:59 EET" duration-ms="7679">
     <groups>
     </groups>
-    <test started-at="2023-03-08T07:51:46 EET" name="Test" finished-at="2023-03-08T07:51:52 EET" duration-ms="5416">
+    <test started-at="2023-03-21T23:07:52 EET" name="Test" finished-at="2023-03-21T23:07:59 EET" duration-ms="7679">
       <class name="com.Restaurant.Testcases.VerifyvaliduserLoginTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.Restaurant.Testcases.VerifyvaliduserLoginTest@293a5bf6]" started-at="2023-03-08T07:51:46 EET" name="loadConfig" finished-at="2023-03-08T07:51:46 EET" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="fntloadconfig()[pri:0, instance:com.Restaurant.Testcases.VerifyvaliduserLoginTest@130d63be]" started-at="2023-03-21T23:07:51 EET" name="fntloadconfig" finished-at="2023-03-21T23:07:52 EET" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fntloadconfig -->
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.Restaurant.Testcases.VerifyvaliduserLoginTest@130d63be]" started-at="2023-03-21T23:07:52 EET" name="loadConfig" finished-at="2023-03-21T23:07:52 EET" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="firstcall(java.lang.String)[pri:0, instance:com.Restaurant.Testcases.VerifyvaliduserLoginTest@293a5bf6]" started-at="2023-03-08T07:51:46 EET" name="firstcall" finished-at="2023-03-08T07:51:50 EET" duration-ms="3249" status="PASS">
+        <test-method is-config="true" signature="firstcall(java.lang.String)[pri:0, instance:com.Restaurant.Testcases.VerifyvaliduserLoginTest@130d63be]" started-at="2023-03-21T23:07:52 EET" name="firstcall" finished-at="2023-03-21T23:07:57 EET" duration-ms="5287" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstcall -->
-        <test-method signature="VerifyUserLogin()[pri:0, instance:com.Restaurant.Testcases.VerifyvaliduserLoginTest@293a5bf6]" started-at="2023-03-08T07:51:50 EET" name="VerifyUserLogin" finished-at="2023-03-08T07:51:52 EET" duration-ms="2041" status="PASS">
+        <test-method signature="VerifyUserLogin()[pri:0, instance:com.Restaurant.Testcases.VerifyvaliduserLoginTest@130d63be]" started-at="2023-03-21T23:07:57 EET" name="VerifyUserLogin" finished-at="2023-03-21T23:07:59 EET" duration-ms="2168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUserLogin -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:com.Restaurant.Testcases.VerifyvaliduserLoginTest@293a5bf6]" started-at="2023-03-08T07:51:52 EET" name="Close" finished-at="2023-03-08T07:51:52 EET" duration-ms="91" status="PASS">
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.Restaurant.Testcases.VerifyvaliduserLoginTest@130d63be]" started-at="2023-03-21T23:07:59 EET" name="Close" finished-at="2023-03-21T23:07:59 EET" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->
-        <test-method is-config="true" signature="Closing()[pri:0, instance:com.Restaurant.Testcases.VerifyvaliduserLoginTest@293a5bf6]" started-at="2023-03-08T07:51:52 EET" name="Closing" finished-at="2023-03-08T07:51:52 EET" duration-ms="347" status="PASS">
+        <test-method is-config="true" signature="Closing()[pri:0, instance:com.Restaurant.Testcases.VerifyvaliduserLoginTest@130d63be]" started-at="2023-03-21T23:07:59 EET" name="Closing" finished-at="2023-03-21T23:08:00 EET" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Closing -->

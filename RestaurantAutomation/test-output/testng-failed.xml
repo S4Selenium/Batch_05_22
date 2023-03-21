@@ -12,6 +12,7 @@
           <include name="loadConfig"/>
           <include name="Close"/>
           <include name="VerifyUserLogin"/>
+          <include name="fntloadconfig"/>
           <include name="firstcall"/>
           <include name="Closing"/>
         </methods>

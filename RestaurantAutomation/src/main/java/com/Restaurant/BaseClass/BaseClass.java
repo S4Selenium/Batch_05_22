@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -70,6 +71,8 @@ public class BaseClass {
 		   public static void launchApp(String browserName){
 		 //String browserName = prop.getProperty("Broswer");
 			if (browserName.equalsIgnoreCase("Chrome")) {
+				ChromeOptions co = new ChromeOptions();
+				co.addArguments("--remote-allow-origins=*");
 				 driver.set(new ChromeDriver());
 			} else if (browserName.equalsIgnoreCase("FireFox")) {
 			     driver.set(new FirefoxDriver());

@@ -5,7 +5,7 @@
 <listener class-name="com.Restaurant.Utilities.Listeners" />
 </listeners>
   <test thread-count="5" name="Regression">
-<parameter name="Browser"  value="Edge"/>
+<parameter name="Browser"  value="Chrome"/>
     <classes>
       <class name="com.Restaurant.Testcases.VerifyvaliduserLoginTest"/>
       <class name="com.Restaurant.Testcases.VerifyvaliduserLoginTest2"/>
@@ -13,7 +13,7 @@
   </test> <!-- Test -->
 
 <test thread-count="5" name="Sanity">
-<parameter name="Browser"  value="Edge"/>
+<parameter name="Browser"  value="Chrome"/>
     <classes>
       <class name="com.Restaurant.Testcases.VerifyvaliduserLoginTest"/>
       <class name="com.Restaurant.Testcases.VerifyvaliduserLoginTest2"/>
