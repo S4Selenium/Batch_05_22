@@ -5,7 +5,7 @@
 <listener class-name="com.Restaurant.Utilities.Listeners" />
 </listeners>
   <test thread-count="5" name="Test">
-<parameter name="Browser"  value="Edge"/>
+<parameter name="Browser"  value="Firefox"/>
     <classes>
       <class name="com.Restaurant.Testcases.VerifyvaliduserLoginTest"/>
     </classes>
